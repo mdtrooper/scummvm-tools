@@ -18,3 +18,21 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
+
+/* Extracts the packed files of Beneath a Steel Sky game */
+
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <iostream>
+
+#include "extract_sky.h"
+
+ExtractSky::ExtractSky(const std::string &name) : Tool(name, TOOLTYPE_EXTRACTION) {
+	_shorthelp = "Used to extract Beneath a Steel Sky data files.";
+	_helptext = "\nUsage: " + getName() + " [-o outputdir] inputdir\n" + _shorthelp + "\n";
+}
+
+// Run the actual tool
+void ExtractSky::execute() {
+}
