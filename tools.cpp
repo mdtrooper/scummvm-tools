@@ -63,6 +63,7 @@
 #include "engines/parallaction/extract_parallaction.h"
 #include "engines/scumm/extract_scumm_mac.h"
 #include "engines/scumm/extract_zak_c64.h"
+#include "engines/sky/extract_sky.h"
 
 Tools::Tools() {
 
@@ -104,6 +105,7 @@ Tools::Tools() {
 	_tools.push_back(new ExtractParallaction());
 	_tools.push_back(new ExtractScummMac());
 	_tools.push_back(new ExtractZakC64());
+	_tools.push_back(new ExtractSky());
 }
 
 Tools::~Tools() {

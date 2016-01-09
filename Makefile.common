@@ -210,6 +210,7 @@ tools_OBJS := \
 	engines/scumm/extract_zak_c64.o \
 	engines/kyra/kyra_ins.o \
 	engines/kyra/kyra_pak.o \
+	engines/sky/extract_sky.o \
 	compress.o \
 	tool.o \
 	tools.o \
